@@ -6,5 +6,7 @@ target 'Aldo_Test' do
   use_frameworks!
 
   # Pods for Aldo_Test
-
+      pod 'Alamofire', '~> 4.7'
+      pod 'SwiftyJSON'
+      pod 'Locksmith'
 end
