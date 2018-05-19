@@ -18,7 +18,7 @@ class BranchPR {
     
     init(json: JSON) {
         self.prNumber = json["number"].int
-        self.prName = json["labels"]["name"].string
+        self.prName = json["title"].string
         self.prMessage = json["labels"]["description"].string
         self.prStatus = json["state"].string
     }

@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,28 +21,28 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Zd1-xO-GDz">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                        <rect key="frame" x="16" y="11" width="288" height="48"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2W-DS-z78">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="17.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="288" height="12"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWY-vZ-ToC">
-                                <rect key="frame" x="0.0" y="17.5" width="320" height="17.5"/>
+                                <rect key="frame" x="0.0" y="12" width="288" height="12"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="th5-aY-QQF">
-                                <rect key="frame" x="0.0" y="35" width="320" height="17"/>
+                                <rect key="frame" x="0.0" y="24" width="288" height="12"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wX9-Va-Bzs">
-                                <rect key="frame" x="0.0" y="52" width="320" height="17.5"/>
+                                <rect key="frame" x="0.0" y="36" width="288" height="12"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -50,10 +51,10 @@
                     </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="Zd1-xO-GDz" secondAttribute="trailing" id="M8E-7v-Gva"/>
-                    <constraint firstItem="Zd1-xO-GDz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="a6y-ih-XUD"/>
-                    <constraint firstAttribute="bottom" secondItem="Zd1-xO-GDz" secondAttribute="bottom" id="ckj-Hv-hlI"/>
-                    <constraint firstItem="Zd1-xO-GDz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="yEZ-Q4-r8N"/>
+                    <constraint firstItem="Zd1-xO-GDz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="pkN-ig-11b"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Zd1-xO-GDz" secondAttribute="trailing" id="rZA-Md-VV6"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Zd1-xO-GDz" secondAttribute="bottom" id="soV-0h-lz1"/>
+                    <constraint firstItem="Zd1-xO-GDz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="xr1-F3-sng"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
