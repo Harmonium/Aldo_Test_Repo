@@ -71,6 +71,7 @@ class ViewController: UIViewController {
             repo.getTest(url: repo.avatarURL!, { (image) in
                 repo.avatarImage = image
                 completion()
+                
             })
     }
     
